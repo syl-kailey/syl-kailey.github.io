@@ -1,0 +1,206 @@
+    const questions = [
+        {
+        id: 1,
+        question: 'What is the main contributor to your mood?',
+        answers: [
+            { text: 'Current Romantic Interest', nextQuestionId: 2 },
+            { text: 'A Break-Up', nextQuestionId: 3 },
+            { text: 'Love of Friends', song: 'Feels Like', link: 'https://open.spotify.com/track/35IcAVSMsU9qzHfpPbvC8A?si=cd22638416a9494f', image: 'https://upload.wikimedia.org/wikipedia/en/thumb/3/33/Gracie_Abrams_-_This_Is_What_It_Feels_Like.png/220px-Gracie_Abrams_-_This_Is_What_It_Feels_Like.png' },
+            { text: 'Mental Health Struggles', nextQuestionId: 4 }
+        ]
+        },
+        {
+        id: 2,
+        question: 'Which statement do you most relate to?',
+        answers: [
+            { text: 'We are on the verge of breaking up.', nextQuestionId: 5 },
+            { text: "I'm so in love.", nextQuestionId: 6 },
+            { text: "I don't think I'm being a great partner", nextQuestionId: 7 }
+        ]
+        },
+        {
+        id: 3,
+        question: 'Which statement do you most relate to?',
+        answers: [
+            { text: 'I miss them.', nextQuestionId: 8 },
+            { text: "I hate them.", nextQuestionId: 9 },
+            { text: "I'm just sad", nextQuestionId: 10 },
+            { text: "I feel apologetic", nextQuestionId: 11 },
+            { text: "I made the right decision", song: 'Wishful Thinking', link: 'https://open.spotify.com/track/1vJKO2Phq0XB5MoZ6iMx8x?si=7a5a34786e854e4c', image: 'https://upload.wikimedia.org/wikipedia/en/thumb/3/33/Gracie_Abrams_-_This_Is_What_It_Feels_Like.png/220px-Gracie_Abrams_-_This_Is_What_It_Feels_Like.png' }
+        ]
+        },
+        {
+        id: 4,
+        question: 'Which lyric do you relate to most?',
+        answers: [
+            { text: "I never said it, but I know that I can't picture anything past 25", song: 'Camden', link: 'https://open.spotify.com/track/1NAWiOec7X7xTa24nXQFCG?si=9dd451fd430b4c63', image: 'https://upload.wikimedia.org/wikipedia/en/thumb/3/33/Gracie_Abrams_-_This_Is_What_It_Feels_Like.png/220px-Gracie_Abrams_-_This_Is_What_It_Feels_Like.png' },
+            { text: "The weight of the world feels so close", song: 'Hard to Sleep', link: 'https://open.spotify.com/track/3ofi5ZcJjLuRgS3FX4U6yG?si=05a7e85c4f0e47a1', image: 'https://upload.wikimedia.org/wikipedia/en/thumb/3/33/Gracie_Abrams_-_This_Is_What_It_Feels_Like.png/220px-Gracie_Abrams_-_This_Is_What_It_Feels_Like.png' },
+            { text: "I'm lost", song: 'Agusta', link: 'https://open.spotify.com/track/35h0oVv5uf0WPNMaFAmNXS?si=b38fc7dc05c74f4f', image: 'https://upload.wikimedia.org/wikipedia/en/thumb/3/33/Gracie_Abrams_-_This_Is_What_It_Feels_Like.png/220px-Gracie_Abrams_-_This_Is_What_It_Feels_Like.png' },
+            { text: "Someone tell me it gets better", song: 'Alright', link: 'https://open.spotify.com/track/1wXqbn4OVaYBOhgj7Z4did?si=ffdca0496e364ba6', image: 'https://upload.wikimedia.org/wikipedia/en/thumb/3/33/Gracie_Abrams_-_This_Is_What_It_Feels_Like.png/220px-Gracie_Abrams_-_This_Is_What_It_Feels_Like.png' },
+            { text: "Somebody notice how I'm trying", song: 'Camden', link: 'https://open.spotify.com/track/1NAWiOec7X7xTa24nXQFCG?si=9dd451fd430b4c63', image: 'https://upload.wikimedia.org/wikipedia/en/thumb/3/33/Gracie_Abrams_-_This_Is_What_It_Feels_Like.png/220px-Gracie_Abrams_-_This_Is_What_It_Feels_Like.png' },
+            { text: "I only let me down when there's no one else around", song: 'Block Me Out', link: 'https://open.spotify.com/track/7AX1eCw6qcX54PrDylynJr?si=0353613706184da1', image: 'https://i.scdn.co/image/ab67616d0000b273c33ecbf483f550ab47ee3767' },
+            { text: "Spiralin' is miserable", song: 'Difficult', link: 'https://open.spotify.com/track/4OWcHdAmVvcL6o8RQYogXh?si=87769c5bc31d4242', image: 'https://media.pitchfork.com/photos/63fcc5014c1fa9c56a8cb15e/1:1/w_600/Gracie%20Abrams-%20Good%20Riddance%20.jpeg' },
+            { text: "I feel like myself right now", song: 'Right now', link: 'https://open.spotify.com/track/0FysXYeuMmdbod61UBUK4m?si=a663d2f555b6444b', image: 'https://media.pitchfork.com/photos/63fcc5014c1fa9c56a8cb15e/1:1/w_600/Gracie%20Abrams-%20Good%20Riddance%20.jpeg'  }
+        ]
+        },
+        {
+        id: 5,
+        question: 'Which lyric do you relate to most?',
+        answers: [
+            { text: "Holding onto something when it's not right", song: 'Mean It', link: 'https://open.spotify.com/track/5IyuGEmlFsnp1TN1M9OSd8?si=3bbf076a46684b6c', image: 'https://images.genius.com/2fb224d64a2dedc96f111a7b3382c09b.500x500x1.jpg' },
+            { text: "You're good to everyone, all them but me", song: 'Long Sleeves', link: 'https://open.spotify.com/track/3wIRxCIGmdxld4ZC6yShZ9?si=c0853437a37e4395', image: 'https://i.scdn.co/image/ab67616d0000b27355c38bc34d1fe852f2657c2e' },
+            { text: "You know what to say, before I turn away", song: 'Brush Fire', link: 'https://open.spotify.com/track/4jp8ragG1fHm1eucECebYF?si=d3304a97c2ca411d', image: 'https://images.genius.com/0eb1144ed4f4bda9dde22aab632d3079.600x600x1.png' },
+            { text: "A thousand times, I got up to say goodbye", song: 'For Real This Time', link: 'https://open.spotify.com/track/1cR29lpK5mJIlajSpRqfNF?si=df513f8bff56465f', image: 'https://upload.wikimedia.org/wikipedia/en/thumb/3/33/Gracie_Abrams_-_This_Is_What_It_Feels_Like.png/220px-Gracie_Abrams_-_This_Is_What_It_Feels_Like.png' },
+            { text: "It's kinda funny when it goes from all to nothing", song: 'Will you cry?', link: 'https://open.spotify.com/track/43UtrOTH0OLozYJDsGrDpv?si=7bfc05fa27304e46', image: 'https://media.pitchfork.com/photos/63fcc5014c1fa9c56a8cb15e/1:1/w_600/Gracie%20Abrams-%20Good%20Riddance%20.jpeg'  }
+
+        ]
+        },
+        {
+            id: 6,
+            question: 'Which lyric do you relate to most?',
+            answers: [
+            { text: "I think you're everything I've wanted", song: 'The blue', link: 'https://open.spotify.com/track/4uzDXV5p8kGs63RALg4W2u?si=0a50ac6da2c147d6', image: 'https://media.pitchfork.com/photos/63fcc5014c1fa9c56a8cb15e/1:1/w_600/Gracie%20Abrams-%20Good%20Riddance%20.jpeg'  },
+            { text: "When I'm down, I fall right back to you", song: 'Fault line', link: 'https://example.com/21', image: 'https://media.pitchfork.com/photos/63fcc5014c1fa9c56a8cb15e/1:1/w_600/Gracie%20Abrams-%20Good%20Riddance%20.jpeg'  },
+            { text: "I'll heal eventually, but faster if you're next to me", song: 'Full machine', link: 'https://open.spotify.com/track/6hPippCCh6sNjUbZBYU0LW?si=3b2005577f0b4507', image: 'https://media.pitchfork.com/photos/63fcc5014c1fa9c56a8cb15e/1:1/w_600/Gracie%20Abrams-%20Good%20Riddance%20.jpeg'  }
+    
+            ]
+        },
+        {
+            id: 7,
+            question: 'Which lyric do you relate to most?',
+            answers: [
+            { text: "I'm minorly stuck, and it's not your fault", song: 'minor', link: 'https://open.spotify.com/track/1G9YZPtxUGfl1yVw7kq4yc?si=bf271e441dde417e', image: 'https://i.scdn.co/image/ab67616d0000b27355c38bc34d1fe852f2657c2e' },
+            { text: "I'm no good, you could do better", song: 'The Bottom', link: 'https://open.spotify.com/track/4Sk74gcXTe9dnE1HU5Pn1y?si=b0b5e6bc489a4f86', image: 'https://upload.wikimedia.org/wikipedia/en/thumb/3/33/Gracie_Abrams_-_This_Is_What_It_Feels_Like.png/220px-Gracie_Abrams_-_This_Is_What_It_Feels_Like.png' }
+    
+            ]
+        },
+        {
+            id: 8,
+            question: 'Which lyric do you relate to most?',
+            answers: [
+            { text: "We could try to go back where we start", song: 'Stay', link: 'https://open.spotify.com/track/0Uon5NsSAkBDx69XYOaQ5P?si=b7e73172be974bf3', image: 'https://static.wikia.nocookie.net/gracieabrams/images/4/42/Stay_Song_Cover.jpg/revision/latest?cb=20230208164754' },
+            { text: "I get a little bit alone sometimes, and I miss you again", song: '21', link: 'https://open.spotify.com/track/5meVa5klVlJalupZTvv5XX?si=bf632e9660324047', image: 'https://i.scdn.co/image/ab67616d0000b27355c38bc34d1fe852f2657c2e' },
+            { text: "I'm still chasing feelings that I don't understand", song: 'Under/Over', link: 'https://open.spotify.com/track/6e5UOAU8hWJq7FKbHGPp2y?si=c75579aa817246f5', image: 'https://i.scdn.co/image/ab67616d0000b27355c38bc34d1fe852f2657c2e' },
+            { text: "You were my problem...it takes one to know one", song: 'Painkillers', link: 'https://open.spotify.com/track/2DWuT8Xe7IeZK6feMqH7it?si=796888a85c3c4e1b', image: 'https://upload.wikimedia.org/wikipedia/en/thumb/3/33/Gracie_Abrams_-_This_Is_What_It_Feels_Like.png/220px-Gracie_Abrams_-_This_Is_What_It_Feels_Like.png' },
+            { text: "Cause part of me wants you back", song: "I know it won't work like that", link: 'https://open.spotify.com/track/5FGDtm3MXJe8LikBkOJnOQ?si=95bc0ee3ca6a405a', image: 'https://media.pitchfork.com/photos/63fcc5014c1fa9c56a8cb15e/1:1/w_600/Gracie%20Abrams-%20Good%20Riddance%20.jpeg'  }
+    
+            ]
+        },
+        {
+            id: 9,
+            question: 'Which lyric do you relate to most?',
+            answers: [
+            { text: "You had no problem leaving, now I'm the one to feel it", song: 'Friend', link: 'https://open.spotify.com/track/6fGSHpEipD1YjtLLChnBzW?si=7a2adaaca91f4620', image: 'https://i.scdn.co/image/ab67616d0000b27355c38bc34d1fe852f2657c2e' },
+            { text: "If that's all it was, hope you feel better now", song: 'Better', link: 'https://open.spotify.com/track/0vZhOON6GYVBxv6ZeeHyZ0?si=23e4471507ea4229', image: 'https://upload.wikimedia.org/wikipedia/en/thumb/3/33/Gracie_Abrams_-_This_Is_What_It_Feels_Like.png/220px-Gracie_Abrams_-_This_Is_What_It_Feels_Like.png' },
+            { text: "I'd kill you if I loved you less hard", song: 'I should hate you', link: 'https://open.spotify.com/track/1PV9R2n7xM53Nz3BOyJ973?si=e39bd33369ba424e', image: 'https://media.pitchfork.com/photos/63fcc5014c1fa9c56a8cb15e/1:1/w_600/Gracie%20Abrams-%20Good%20Riddance%20.jpeg'  }
+    
+            ]
+        },
+        {
+            id: 10,
+            question: 'Which lyric do you relate to most?',
+            answers: [
+            { text: "Slept on floors of angry mornings, but you never let me in", song: 'tehe', link: 'https://open.spotify.com/track/2kp86yPhiPBTyoTYHB403F?si=6928f904679d4776', image: 'https://i.scdn.co/image/ab67616d0000b27355c38bc34d1fe852f2657c2e' },
+            { text: "We were so good...'til it just stopped working", song: 'Older', link: 'https://open.spotify.com/track/1uZ2ztIesiuUUHu31sAoFW?si=8d6b8d2db18f410a', image: 'https://upload.wikimedia.org/wikipedia/en/thumb/3/33/Gracie_Abrams_-_This_Is_What_It_Feels_Like.png/220px-Gracie_Abrams_-_This_Is_What_It_Feels_Like.png' },
+            { text: "I went tired, and you went cold", song: 'Older', link: 'https://open.spotify.com/track/1uZ2ztIesiuUUHu31sAoFW?si=8d6b8d2db18f410a', image: 'https://upload.wikimedia.org/wikipedia/en/thumb/3/33/Gracie_Abrams_-_This_Is_What_It_Feels_Like.png/220px-Gracie_Abrams_-_This_Is_What_It_Feels_Like.png' },
+            { text: "I can't pretend that I don't sit around and think about you", song: 'This is what the drugs are for', link: 'https://open.spotify.com/track/1SA1Lt8jTM4ab9aTOqPWHy?si=a39675ac09614cdd', image: 'https://media.pitchfork.com/photos/63fcc5014c1fa9c56a8cb15e/1:1/w_600/Gracie%20Abrams-%20Good%20Riddance%20.jpeg'  }
+    
+            ]
+        },
+        {
+            id: 11,
+            question: 'Which lyric do you relate to most?',
+            answers: [
+            { text: "I miss you, I'm sorry", song: "I miss you. I'm sorry", link: 'https://open.spotify.com/track/4nyF5lmSziBAt7ESAUjpbx?si=7fa5ee66e5714513', image: 'https://i.scdn.co/image/ab67616d0000b27355c38bc34d1fe852f2657c2e' },
+            { text: "Every time I get too close, I just go mess it up", song: 'Mess It Up', link: 'https://open.spotify.com/track/0PLhwCmQ7cC3ThRGPn3HxF?si=b0156992c7314854', image: 'https://i.scdn.co/image/ab67616d0000b2731e209fb0ebc9de8c859bd25f' },
+            { text: "Bet you wish you never even met me, I don't blame you", song: 'Rockland', link: 'https://open.spotify.com/track/5V03tsbEzYG0PmRrh3K4rF?si=72be3404fd884c48', image: 'https://upload.wikimedia.org/wikipedia/en/thumb/3/33/Gracie_Abrams_-_This_Is_What_It_Feels_Like.png/220px-Gracie_Abrams_-_This_Is_What_It_Feels_Like.png' },
+            { text: "I never was the best to you", song: 'Best', link: 'https://open.spotify.com/track/5SJXktlo399QlOYBu4rB3m?si=67a83804318f4944', image: 'https://media.pitchfork.com/photos/63fcc5014c1fa9c56a8cb15e/1:1/w_600/Gracie%20Abrams-%20Good%20Riddance%20.jpeg'  },
+            { text: "Cause part of me wants you back", song: 'Best', link: 'https://open.spotify.com/track/5SJXktlo399QlOYBu4rB3m?si=67a83804318f4944', image: 'https://media.pitchfork.com/photos/63fcc5014c1fa9c56a8cb15e/1:1/w_600/Gracie%20Abrams-%20Good%20Riddance%20.jpeg'  },
+            { text: "It was one-sided, hate how I hurt you", song: 'Where do we go now?', link: 'https://open.spotify.com/track/22bV9M6ZhoSMQk6Kumpe92?si=8d274205ce534a54', image: 'https://media.pitchfork.com/photos/63fcc5014c1fa9c56a8cb15e/1:1/w_600/Gracie%20Abrams-%20Good%20Riddance%20.jpeg'  }
+    
+            ]
+        }
+        // Add more questions here...
+    ];
+    
+    let currentQuestionIndex = 0;
+    let currentQuestion = 0;
+    
+    function initializeQuiz() {
+        const quizContainer = document.getElementById('quiz-container');
+        const resultContainer = document.getElementById('result-container');
+    
+        quizContainer.style.display = 'block';
+        resultContainer.style.display = 'none';
+    
+        showQuestion();
+    }
+
+    function showQuestion() {
+    currentQuestion++;
+    const question = questions[currentQuestionIndex];
+    const questionElement = document.getElementById('question');
+    const questionTextElement = document.getElementById('question-text');
+    const answersContainer = document.getElementById('answers-container');
+
+    questionElement.textContent = `Question ${currentQuestion}`;
+    questionTextElement.textContent = question.question;
+    answersContainer.innerHTML = '';
+
+    question.answers.forEach(answer => {
+        const answerButton = document.createElement('button');
+        answerButton.textContent = answer.text;
+        answerButton.classList.add('button'); // Add the "button" class to the button
+        answerButton.addEventListener('click', () => selectAnswer(answer.nextQuestionId, answer.song, answer.link, answer.image));
+        answersContainer.appendChild(answerButton);
+    });
+    }
+    
+    
+    function selectAnswer(nextQuestionId, song, link, image) {
+    currentQuestionIndex++;
+    
+    if (nextQuestionId) {
+        currentQuestionIndex = questions.findIndex(question => question.id === nextQuestionId);
+        showQuestion();
+    } else {
+        showResult(song, link, image);
+    }
+    }
+    
+    function showResult(song, link, image) {
+        const quizContainer = document.getElementById('quiz-container');
+        const resultContainer = document.getElementById('result-container');
+        const resultText = document.getElementById('result-text');
+        const albumImage = document.getElementById('album-image');
+        const songButton = document.getElementById('song-button');
+        songButton.src = 'https://www.latinousa.org/wp-content/uploads/2022/07/listen-on-spotify-button.png';
+        songButton.classList.add('song-button');
+        songButton.href = link;
+        resultContainer.appendChild(songButton);
+    
+        quizContainer.style.display = 'none';
+        resultContainer.style.display = 'block';
+        resultText.textContent = `You should listen to ${song}.`;
+        albumImage.src = image; // Replace with the actual path to the album image
+        albumImage.alt = 'Album Image';
+    }
+
+    // Function to reload the quiz
+    function reloadQuiz() {
+        currentQuestionIndex = 0;
+        currentQuestion = 0;
+        const quizContainer = document.getElementById('quiz-container');
+        const resultContainer = document.getElementById('result-container');
+
+        quizContainer.style.display = 'block';
+        resultContainer.style.display = 'none';
+
+        showQuestion();
+    }
+
+    // Attach event listener to the button
+    document.getElementById('reloadButton').addEventListener('click', reloadQuiz);
+
+    initializeQuiz();
+    

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sabrina Carpenter Song Selector</title>
+<style>
+
+body{
+    background-color: #5A838A;
+}
+
+.top-section{
+    background-image: url('https://i.pinimg.com/originals/a6/47/31/a64731c2532a60679367be4219296af6.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 50px; /* Adjust the padding as needed */
+    width: 92%;
+    height: 570px;
+    top: 10px;
+}
+
+.content {
+    position: absolute;
+    top: 10%;
+    left: 60%;
+    width: 450px;
+    text-align: center;
+}
+
+/* CSS */
+.button {
+    appearance: none;
+    background-color: #5A838A;
+    border: 2px solid #CE9C75;
+    border-radius: 15px;
+    color: #CE9C75;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    height: 60px;
+    width: 120;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    will-change: transform;
+    padding-left: 10px;
+    border-spacing: 10px;
+}
+
+.button:disabled {
+  pointer-events: none;
+}
+
+.button:hover {
+  border: 2px solid #A25238;
+  color: #A25238;
+  background-color: #5A838A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+a{
+  text-decoration: none;
+  color: #5A838A;
+}
+
+.button a:hover{
+  color: #A25238;
+}
+
+.question{
+  font-family: "Times New Roman";
+  color: #5A838A;
+  position: absolute;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  padding: 10px;
+}
+  
+
+
+</style>
+</head>
+<body>
+    <center>
+        <section class="top-section">
+            <div class="content" style = "position: fixed; top: 20px;">
+              <div class="question">
+                <h2>What best describes your love life?</h2>
+              </div>
+              <br><br><br><br>
+              <a href = "young.html"><button class="button">Young and In Love</button></a>
+              <br><br>
+              <a href = "toxic.html"><button class="button">A Bit Toxic</button></a>
+              <br><br>
+              <a href = "crush.html"><button class="button">Crushing</button></a>
+              <br><br>
+              <a href = "connection.html"><button class="button">Struggling to Connect</button></a>
+              <br><br>
+              <a href = "inlove.html"><button class="button">So In Love</button></a>
+              <br><br>
+              <a href = "fight.html"><button class="button">In a Tiff</button></a>
+              <br><br>
+              <a href = "anxiety.html"><button class="button">Feeling Relationship Anxiety</button></a>
+            </div>
+          </section>
+
+    </center>
+</body>
+</html>
+

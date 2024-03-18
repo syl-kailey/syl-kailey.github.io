@@ -1,0 +1,180 @@
+body{
+	background: 	#E8DCB8;
+	font-family: times new roman;
+}
+
+
+header{
+
+	color: white;
+	font-size: 40px;
+	font-weight:  bold;
+	padding-bottom: 20px;
+	text-decoration-line: underline;
+	text-decoration-style: single;
+}
+
+p{
+	font-size: 20px;
+	background-color:  #355C7D;
+	color:  #E8DCB8;
+	border:  1px solid 	#00004c;
+	border-radius:  15px;
+	padding:  14px 25px;
+	text-align:  center;
+	text-decoration:  none;
+	display:  inline-block;
+}
+
+p.debut{
+	font-size: 20px;
+	background-color:  #e6c8a6;
+	color:  #4496aa;
+	border:  1px solid 	#4496aa;
+	border-radius:  15px;
+	padding:  14px 25px;
+	text-align:  center;
+	text-decoration:  none;
+	display:  inline-block;
+}
+
+
+p.fearless{
+	font-size: 20px;
+	background-color:  #583c2c;
+	color:  #eccc8c;
+	border:  1px solid 	#eccc8c;
+	border-radius:  15px;
+	padding:  14px 25px;
+	text-align:  center;
+	text-decoration:  none;
+	display:  inline-block;
+}
+
+p.speakNow{
+	font-size: 20px;
+	background-color:  #52316b;
+	color:  #e0af6d;
+	border:  1px solid 	#db7ca5;
+	border-radius:  15px;
+	padding:  14px 25px;
+	text-align:  center;
+	text-decoration:  none;
+	display:  inline-block;
+}
+
+p.red{
+	font-size: 20px;
+	background-color: #84451c;
+	color: #650604;
+	border:  1px solid 	#650604;
+	border-radius:  15px;
+	padding:  14px 25px;
+	text-align:  center;
+	text-decoration:  none;
+	display:  inline-block;
+}
+
+p.nineteen{
+	font-size: 20px;
+	background-color:  #e0e1d8;
+	color:  #816477;
+	border:  1px solid 	#816477;
+	border-radius:  15px;
+	padding:  14px 25px;
+	text-align:  center;
+	text-decoration:  none;
+	display:  inline-block;
+}
+
+
+p.reputation{
+	font-size: 20px;
+	background-color:  #9c9c9c;
+	color:  #000000;
+	border:  1px solid 	#000000;
+	border-radius:  15px;
+	padding:  14px 25px;
+	text-align:  center;
+	text-decoration:  none;
+	display:  inline-block;
+}
+
+p.lover{
+	font-size: 20px;
+	background-color:  #f7cacd;
+	color:  #5c8bc4;
+	border:  1px solid 	#5c8bc4;
+	border-radius:  15px;
+	padding:  14px 25px;
+	text-align:  center;
+	text-decoration:  none;
+	display:  inline-block;
+}
+
+p.folklore{
+	font-size: 20px;
+	background-color:  #bababa;
+	color:  #353535;
+	border:  1px solid 	#353535;
+	border-radius:  15px;
+	padding:  14px 25px;
+	text-align:  center;
+	text-decoration:  none;
+	display:  inline-block;
+}
+
+p.evermore{
+	font-size: 20px;
+	background-color:  #787a6c;
+	color:  #67230e;
+	border:  1px solid 	#67230e;
+	border-radius:  15px;
+	padding:  14px 25px;
+	text-align:  center;
+	text-decoration:  none;
+	display:  inline-block;
+}
+
+p.midnights{
+	font-size: 20px;
+	background-color:  #355C7D;
+	color:  white;
+	border:  1px solid 	white;
+	border-radius:  15px;
+	padding:  14px 25px;
+	text-align:  center;
+	text-decoration:  none;
+	display:  inline-block;
+}
+
+p.theYoung{
+	font-size: 20px;
+	background-color:  #211c22;
+	color:  #6d5b74;
+	border:  1px solid 	tan;
+	border-radius:  15px;
+	padding:  14px 25px;
+	text-align:  center;
+	text-decoration:  none;
+	display:  inline-block;
+}
+
+h2{
+	color: #00004c;
+}
+
+
+.parallax {
+  /* The image used */
+  background-image: url("https://i.pinimg.com/564x/10/bb/d1/10bbd14853332383cf694bc051ef1049.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

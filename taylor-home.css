@@ -1,0 +1,181 @@
+
+body{
+	background:#355C7D  ;
+	font-family: times new roman;
+}
+
+header{
+	border:  1px solid white;
+	border-radius: 25px;
+	color: 	white;
+	background-color: rgba(53, 92, 125, 0.5);
+	font-size: 40px;
+	font-weight:  bold;
+	padding: 20px;
+}
+
+
+p{
+	border:  1px solid white;
+	border-radius: 25px;
+	background-color: rgba(53, 92, 125, 0.5);
+	color: white;
+	padding: 14px 25px;
+	text-align: center;
+	font-size: 20px;
+	display: inline-block;
+}
+
+h2{
+	color: white;
+	text-decoration: underline;
+}
+
+p1{
+	color: 	#00004c;
+	background-color: rgba(53, 92, 125, 0.5);
+	font-size: 23px;
+	padding: 20px;
+	border:  3px solid #00004c;
+	border-radius:  15px;
+	padding:  14px 25px;
+	text-align:  center;
+	text-decoration:  none;
+	display:  inline-block;
+}
+
+
+a{
+	font-size: 20px;
+}
+
+
+a:link, a:visited{
+	background-color: #999;
+	color:  white;
+	border:  1px solid #00004c;
+	border-radius:  15px;
+	padding:  14px 25px;
+	text-align:  center;
+	text-decoration:  none;
+	display:  inline-block;
+}
+
+a:hover, a:active{
+	background-color: #E8DCB8;
+	color: #00004c;
+	font-weight: bold;
+}
+
+a.fearless:link, a.fearless:visited{
+	background-color: #999;
+	color:  white;
+	border:  1px solid #00004c;
+	border-radius:  15px;
+	padding:  14px 25px;
+	text-align:  center;
+	text-decoration:  none;
+	display:  inline-block;
+}
+
+
+
+
+body, html {
+  height: 100%;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("https://i.pinimg.com/originals/ef/39/31/ef3931afc763d092286b71adaeefe56c.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a{
+  text-decoration:none;
+  font-size: 20px;
+}
+.header{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: -1;
+  overflow:hidden;
+  display:flex;
+  flex-wrap: wrap;
+
+  color:#eee;
+  border-radius: 0 0 85% 85% / 30%;
+  background: url(https://thatssotampa.com/wp-content/uploads/2022/11/Taylor-Swift-2023-Tour.jpg) 50% 0 no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+}
+
+.header a{
+  color:#eee
+}
+
+.info{
+  width:100%;
+  padding:15% 10% 0 10%;
+  text-align:center;
+  text-shadow:0 2px 3px rgba(0,0,0,0.2);
+}
+
+
+.content{  
+  padding:5% 10%;
+  text-align:justify;
+}
+
+.link a{
+	font-size: 20px;
+}
+
+
+.link a:link, .link a:visited{
+	background-color: rgba(53, 92, 125, 0.5);
+	color:  white;
+	border:  1px solid white;
+	border-radius:  15px;
+	padding:  14px 25px;
+	text-align:  center;
+	text-decoration:  none;
+	display:  inline-block;
+}
+
+.link a:hover, .link a:active{
+	background-color: #00004c;
+	color: #f2eecb;
+}
+
+
+

@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lorde Song Selector</title>
+        <link rel="stylesheet" href="styles2.css">
+        <style>
+
+            body{
+                font-family: 'Times New Roman', Times, serif;
+                background-color: rgba(226,226,226,1);
+                color: #110B11;
+            }
+
+            #open-screen{
+                background: rgb(177,110,50);
+                background: linear-gradient(0deg, rgba(177,110,50,1) 4%, rgba(226,226,226,1) 96%);
+                width:100%;
+                height: 100vh;
+            }
+
+            .container{
+                position: relative;
+                text-align: center;
+            }
+
+            .image{
+                padding-top: 100px;
+                width: 100%;
+            }
+
+            .text{
+                position: absolute;
+                z-index: 999;
+                margin: 0 auto;
+                left: 0;
+                right: 0;        
+                text-align: center;
+                top: 0.001%; /* Adjust this value to move the positioned div up and down */
+                color: #3a261a;
+                width: 100%; /* Set the width of the positioned div */
+            }
+
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+
+
+            .main-section h1{
+                font-size: 80px;
+                font-weight: lighter;
+            }
+
+
+
+
+
+            #explanation{
+                padding-top: 250px;
+                width:100%;
+                height: 50vh;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 60%;
+            }
+
+            .explanation-text h1{
+                color: #6d3c1e;
+            }
+
+            .explanation-text h2{
+                color: #6d3c1e;
+            }
+
+            .button-1 {
+            
+            background-color: #c08c12;
+            border: 2px solid #6d3c1e;
+            border-radius: 30px;
+            box-shadow: #6d3c1e 4px 4px 0 0;
+            color: #6d3c1e;
+            cursor: pointer;
+            display: inline-block;
+            font-weight: 600;
+            font-size: 18px;
+            padding: 0 18px;
+            line-height: 50px;
+            text-align: center;
+            text-decoration: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            margin: 10px;
+            }
+
+            .button-1:hover {
+            background-color: rgba(226,226,226,1);
+            }
+
+            .button-1:active {
+            box-shadow: #6d3c1e 2px 2px 0 0;
+            transform: translate(2px, 2px);
+            }
+
+            @media (min-width: 768px) {
+            .button-1 {
+                min-width: 120px;
+                padding: 0 25px;
+            }
+            }
+
+
+
+
+            #question1{
+                width:100%;
+                height: 70vh;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 60%;
+                padding: 70px;
+            }
+
+            .question-text h1{
+                color: #6d3c1e;
+            }
+
+
+            .parallax1 {
+                /* The image used */
+                background-image: url("https://assets.vogue.com/photos/6135781a08b7a3f00afc3a47/master/w_1600,c_limit/TDG_LORDE_-(10).jpg");
+
+                /* Full height */
+                height: 600px;
+
+                /* Create the parallax scrolling effect */
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+            @media screen and (max-width: 1800px) {
+                .parallax1 {
+                    background-attachment: scroll;
+                }
+            }
+
+            @media screen and (max-width: 1500px) {
+                .parallax1 {
+                    background-attachment: scroll;
+                }
+            }
+
+            @media screen and (max-width: 1200px) {
+                .parallax1 {
+                    background-attachment: scroll;
+                }
+            }
+
+            @media screen and (max-width: 900px) {
+                .parallax1 {
+                    background-attachment: scroll;
+                }
+            }
+                
+            @media screen and (max-width: 600px) {
+                .parallax1 {
+                    background-attachment: scroll;
+                }
+            }
+
+
+
+
+
+        </style>
+    </head>
+    <body>
+    <center>
+
+
+    <div id="open-screen">
+        <div class="container">
+            <div class="main-section">
+                <div class="text">
+                    <h1>Lorde Song Selector</h1>
+                </div>
+                <div class="image">
+                    <img src = "https://assets.vogue.com/photos/6135782657b59f6db193b451/master/w_1600,c_limit/TDG_LORDE_-(17).jpg" width= "640" height="800" >
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="explanation">
+        <div class="container">
+            <div class="explanation-text">
+                <h1>Welcome to the Lorde Song Selector</h1>
+                <h2>Answer a few questions about your mood and you will recieve a Lorde song that best suits your situation.</h2>
+                <h2>Have fun!</h2>
+                <a href="#question1" class="button-1" >Click to Begin</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="parallax1"></div>
+    <div id="question1">
+        <div class="container">
+            <div class="question-text">
+                <h1>Which of these options is the biggest contributor to your mood right now?</h1>
+                <a href="#myself" class="button-1">Myself</a>
+                <a href="#partner" class="button-1">Partner</a>
+                <a href="#crush" class="button-1">Crush</a>
+                <a href="#ex" class="button-1">Ex-Partner</a>
+                <a href="#friends" class="button-1">Friend(s)</a>
+                <a href="#ex-friends" class="button-1">Ex-Friend(s)</a>
+                <a href="#other" class="button-1">Other</a>
+            </div>
+        </div>
+    </div>
+    <div class="parallax1"></div>
+
+
+
+    <!--------Myself Section--> 
+
+    <div id="myself">
+        <div class="container">
+            <div class="question-text">
+                <h1>Which of these is your mood related to?</h1>
+                <a href="#self-reflection" class="button-1">Self-Reflection</a>
+                <a href="#age" class="button-1">Age</a>
+                <a href="#healing" class="button-1">Accomplishments</a>
+                <a href="#career" class="button-1">Healing</a>
+                <a href="#myself-other" class="button-1">None of the Above</a>
+                <br>
+                <br>
+                <a href="#question1" class="button-1">
+                    BACK</a>
+            </div>
+        </div>
+    </div>
+    <div class="parallax1"></div>
+
+
+    <div id="self-reflection">
+        <div class="container">
+            <div class="question-text">
+                <h1>Which of these lyrics do you relate to most?</h1>
+
+
+                <a href="https://sylkaren.tumblr.com/lorde-songs#liability" target="_blank" class="button-1">
+                    "i am a toy the people enjoy until all of the tricks don't work anymore"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#liability" target="_blank" class="button-1">
+                    "i understand...i'm a little too much for everyone"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#soberII" target="_blank" class="button-1">
+                    "they've gone home, but who am i?"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#soberII" target="_blank" class="button-1">
+                    "the terror and the horror and we wonder why we bother"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#liability-reprise" target="_blank" class="button-1">
+                    "you're not what you thought you were"</a>
+
+                <a href="https://sylkaren.tumblr.com/lorde-songs#bravado" target="_blank" class="button-1">
+                    "i was raised to be admired, to be noticed"</a>
+
+                <a href="https://sylkaren.tumblr.com/lorde-songs#stoned" target="_blank" class="button-1">
+                    "you offered your hand and i took it"</a>
+
+                <br>
+                <br>
+                <a href="#myself" class="button-1">
+                    BACK</a>
+                
+
+            </div>
+        </div>
+    </div>
+    <div class="parallax1"></div>
+
+
+    <div id="age">
+        <div class="container">
+            <div class="question-text">
+                <h1>Which of these lyrics do you relate to most?</h1>
+
+
+                <a href="https://sylkaren.tumblr.com/lorde-songs#ribs" target="_blank" class="button-1">
+                    "it drives you crazy getting old"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#ribs" target="_blank" class="button-1">
+                    "i've never felt more alone, feels so scary getting old"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#team" target="_blank" class="button-1">
+                    "i'm kind of older than i was when i reveled without a care"</a>
+                
+                <br>
+                <br>
+                <a href="#myself" class="button-1">
+                    BACK</a>
+
+            </div>
+        </div>
+    </div>
+    <div class="parallax1"></div>
+
+
+
+
+    <div id="healing">
+        <div class="container">
+            <div class="question-text">
+                <h1>Which of these lyrics do you relate to most?</h1>
+
+
+                <a href="https://sylkaren.tumblr.com/lorde-songs#california" target="_blank" class="button-1">
+                    "now in my hometown, sunbathing, my girlfriends and my baby"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#secrets" target="_blank" class="button-1">
+                    "everybody wants the best for you, but you gotta want it for yourself"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#mood-ring" target="_blank" class="button-1">
+                    "i just wanna know, will i be alright?"</a>
+
+                <br>
+                <br>
+                <a href="#myself" class="button-1">
+                    BACK</a>
+                
+
+            </div>
+        </div>
+    </div>
+    <div class="parallax1"></div>
+
+
+
+
+
+
+    <div id="career">
+        <div class="container">
+            <div class="question-text">
+                <h1>Which of these lyrics do you relate to most?</h1>
+
+
+                <a href="https://sylkaren.tumblr.com/lorde-songs#still-sane" target="_blank" class="button-1">
+                    "all work and no play...all business, all day keeps me up a level</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#bravado" target="_blank" class="button-1">
+                    "i want the applause, the approval"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#million-dollar" target="_blank" class="button-1">
+                    "there's nothing i want but money and time"</a>
+
+                <br>
+                <br>
+                <a href="#myself"  class="button-1">
+                    BACK</a>
+                
+
+            </div>
+        </div>
+    </div>
+    <div class="parallax1"></div>
+
+
+
+
+    <div id="myself-other">
+        <div class="container">
+            <div class="question-text">
+                <h1>Which of these lyrics do you relate to most?</h1>
+
+
+                <a href="https://sylkaren.tumblr.com/lorde-songs#white-teeth" target="_blank" class="button-1">
+                    "i am not a white teeth teen, i tried to join but never did"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#sober" target="_blank" class="button-1">
+                    "i just hope the sun will such us the path"</a>
+                
+
+                <br>
+                <br>
+                <a href="#myself"  class="button-1">
+                    BACK</a>
+                
+
+            </div>
+        </div>
+    </div>
+    <div class="parallax1"></div>
+
+
+
+
+
+
+
+
+
+
+    <!--------Partner Section-->   
+
+    
+    <div id="partner">
+        <div class="container">
+            <div class="question-text">
+                <h1>Which of these lyrics do you relate to most?</h1>
+
+
+                <a href="https://sylkaren.tumblr.com/lorde-songs#sober" target="_blank" class="button-1">
+                    "we pretend that we just don't care, but we care"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#sober" target="_blank" class="button-1">
+                    "what would we do when we're sober?"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#louvre" target="_blank" class="button-1">
+                    "blow all my friendships to sit in hell with you"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#world-alone" target="_blank" class="button-1">
+                    "you're my best friend and we're dancing in this world alone"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#lux" target="_blank" class="button-1">
+                    "killing time, can i kill it with you?"</a>
+
+                <a href="https://sylkaren.tumblr.com/lorde-songs#lux" target="_blank" class="button-1">
+                    "i'd like it if you stayed"</a>
+
+                <a href="https://sylkaren.tumblr.com/lorde-songs#lux" target="_blank" class="button-1">
+                    "you offered your hand and i took it"</a>
+
+
+                <br>
+                <br>
+                <a href="#question1"  class="button-1">
+                    BACK</a>
+
+            </div>
+        </div>
+    </div>
+    <div class="parallax1"></div>
+
+
+
+
+
+
+
+ <!--------Crush Section-->   
+
+    <div class="parallax1"></div>
+    <div id="crush">
+        <div class="container">
+            <div class="question-text">
+                <h1>Which of these lyrics do you relate to most?</h1>
+
+
+                <a href="https://sylkaren.tumblr.com/lorde-songs#sober" target="_blank" class="button-1">
+                    "we pretend that we just don't care, but we care"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#sober" target="_blank" class="button-1">
+                    "what would we do when we're sober?"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#dynamite" target="_blank" class="button-1">
+                    "know i think you're awesome, right?"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#dynamite" target="_blank" class="button-1">
+                    "i'll give you my best side, tell you all my best lies"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#louvre" target="_blank" class="button-1">
+                    "i am your sweetheart, psychopathic crush"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#louvre" target="_blank" class="button-1">
+                    "blow all my friendships to sit in hell with you"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#supercut" target="_blank" class="button-1">
+                    "i'll be your quiet afternoon crush, be your violent overnight rush"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#supercut" target="_blank" class="button-1">
+                    "we were wild and fluorescent"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#lux" target="_blank" class="button-1">
+                    "killing time, can i kill it with you?"</a>
+                
+                <br>
+                <br>
+                <a href="#question1"  class="button-1">
+                    BACK</a>
+
+            </div>
+        </div>
+    </div>
+    <div class="parallax1"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--------Friends Section-->   
+
+
+    <div id="friends">
+        <div class="container">
+            <div class="question-text">
+                <h1>Which of these lyrics do you relate to most?</h1>
+
+
+                <a href="https://sylkaren.tumblr.com/lorde-songs#perfect-places" target="_blank" class="button-1">
+                    "cause we are young"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#perfect-places" target="_blank" class="button-1">
+                    "have another drink get lost with us"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#dynamite-remix" target="_blank" class="button-1">
+                    "Our friends, our drinks, we get inspired"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#tennis-court" target="_blank" class="button-1">
+                    "we're so happy, even when we're smiling out of fear"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#team" target="_blank" class="button-1">
+                    "we live in cities you'll never see on-screen...but we sure know how to run things"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#world-alone" target="_blank" class="button-1">
+                    "you're my best friend and we're dancing in this world alone"</a>
+ 
+                    
+                <br>
+                <br>
+                <a href="#question1"  class="button-1">
+                    BACK</a>
+                
+
+            </div>
+        </div>
+    </div>
+    <div class="parallax1"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--------Ex-Friends Section-->   
+
+    
+    <div id="ex-friends">
+        <div class="container">
+            <div class="question-text">
+                <h1>Which of these lyrics do you relate to most?</h1>
+
+
+                <a href="https://sylkaren.tumblr.com/lorde-songs#white-teeth" target="_blank" class="button-1">
+                    "the white teeth teens are out"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#world-alone" target="_blank" class="button-1">
+                    "all the double-edged people into schemes make a mess"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#love-club" target="_blank" class="button-1">
+                    "there's nothing more i want except to be alone"</a>
+                
+                <br>
+                <br>
+                <a href="#question1"  class="button-1">
+                    BACK</a>  
+
+            </div>
+        </div>
+    </div>
+    <div class="parallax1"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--------Ex Section--> 
+
+    <div id="ex">
+        <div class="container">
+            <div class="question-text">
+                <h1>Do you miss this person?</h1>
+                <a href="#miss" class="button-1">Yes</a>
+                <a href="#no-miss" class="button-1">Not Particularly</a>
+                <br>
+                <br>
+                <a href="#question1" class="button-1">
+                    BACK</a>
+            </div>
+        </div>
+    </div>
+    <div class="parallax1"></div>
+
+
+    <div id="miss">
+        <div class="container">
+            <div class="question-text">
+                <h1>Which of these lyrics do you relate to most?</h1>
+
+
+                <a href="https://sylkaren.tumblr.com/lorde-songs#green-light" target="_blank" class="button-1">
+                    "thought you said that you would always be love, but you're not in love no more"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#green-light" target="_blank" class="button-1">
+                    "i wish I could get my things and just let go"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#hard-feelings" target="_blank" class="button-1">
+                    "i'll start letting go of little things till i'm so far away from you"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#writer" target="_blank" class="button-1">
+                    "i'll love you till my breathing stops</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#hold-no-grudge" target="_blank" class="button-1">
+                    "i didn't know that i could be replaced"</a>
+                
+
+                <br>
+                <br>
+                <a href="#ex" class="button-1">
+                    BACK</a>
+                
+
+            </div>
+        </div>
+    </div>
+    <div class="parallax1"></div>
+
+
+    <div id="no-miss">
+        <div class="container">
+            <div class="question-text">
+                <h1>Which of these lyrics do you relate to most?</h1>
+
+
+                <a href="https://sylkaren.tumblr.com/lorde-songs#green-light" target="_blank" class="button-1">
+                    "thought you said that you would always be love, but you're not in love no more"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#hard-feelings" target="_blank" class="button-1">
+                    "forever was us before all of the winds of regret and mistrust"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#hard-feelings" target="_blank" class="button-1">
+                    "when you've outgrown a lover, the whole world knows but you"</a>
+
+                <a href="https://sylkaren.tumblr.com/lorde-songs#hard-feelings" target="_blank" class="button-1">
+                    "it's time to let go of this endless summer afternoon"</a>
+                    
+                <a href="https://sylkaren.tumblr.com/lorde-songs#hard-feelings" target="_blank" class="button-1">
+                    "three years, loved you every single day…it was real for me"</a>
+                    
+                <a href="https://sylkaren.tumblr.com/lorde-songs#writer" target="_blank" class="button-1">
+                    "you're walking out to be a good man to someone else"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#writer" target="_blank" class="button-1">
+                    "did my best to exist just for you"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#writer" target="_blank" class="button-1">
+                    "i'll find a way to be without you, babe"</a>
+
+                <a href="https://sylkaren.tumblr.com/lorde-songs#dominoes" target="_blank" class="button-1">
+                    "must feel good being mr. start again"</a>
+                    
+                <a href="https://sylkaren.tumblr.com/lorde-songs#hold-no-grudge" target="_blank" class="button-1">
+                    "i didn't know that i could be replaced"</a>
+
+
+
+                <br>
+                <br>
+                <a href="#ex" class="button-1">
+                    BACK</a>
+
+            </div>
+        </div>
+    </div>
+    <div class="parallax1"></div>
+
+
+
+
+
+<!------Other Section-->
+
+    <div id="other">
+        <div class="container">
+            <div class="question-text">
+                <h1>Which of these lyrics do you relate to most?</h1>
+
+
+                <a href="https://sylkaren.tumblr.com/lorde-songs#tennis-court" target="_blank" class="button-1">
+                    "it's a new artform, showing people how little we care"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#royals" target="_blank" class="button-1">
+                    "just not for us, we're driving Cadillacs in our dreams"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#buzzcut-season" target="_blank" class="button-1">
+                    "nothing's wrong when nothing's true"</a>
+
+                <a href="https://sylkaren.tumblr.com/lorde-songs#team" target="_blank" class="button-1">
+                    "i'm kind of over getting told to throw my hands up in the air'"</a>
+                    
+                <a href="https://sylkaren.tumblr.com/lorde-songs#glory-gore" target="_blank" class="button-1">
+                    "i gues we're really fighting ourselves"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#love-club" target="_blank" class="button-1">
+                    "be apart of the love club, everything will glow for you"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#flicker" target="_blank" class="button-1">
+                    "i'm locking up everyone who ever laid a finger on me"</a>
+
+                <a href="https://sylkaren.tumblr.com/lorde-songs#solar-power" target="_blank" class="button-1">
+                    "but when the heat comes, something takes a hold"</a>
+                    
+                <a href="https://sylkaren.tumblr.com/lorde-songs#big-star" target="_blank" class="button-1">
+                    "i watch you running though the amber light"</a>
+                
+                <a href="https://sylkaren.tumblr.com/lorde-songs#helen" target="_blank" class="button-1">
+                    "let's hear it for the girls, living in the modern world"</a>
+
+
+
+                <br>
+                <br>
+                <a href="#question1" class="button-1">
+                    BACK</a>
+
+            </div>
+        </div>
+    </div>
+    <div class="parallax1"></div>
+
+    </center>
+
+
+    <script>
+       
+    </script>
+    </body>
+</html>
