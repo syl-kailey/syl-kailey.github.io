@@ -115,6 +115,7 @@ const songs = [
     { title: "Delicate", album: "Reputation" },
     { title: "Look What You Made Me Do", album: "Reputation" },
     { title: "So It Goes...", album: "Reputation" },
+    { title: "Call It What You Want", album: "Reputation" },
     { title: "Gorgeous", album: "Reputation" },
     { title: "Getaway Car", album: "Reputation" },
     { title: "King of My Heart", album: "Reputation" },
