@@ -1,0 +1,19 @@
+/* Add your CSS styles here */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #add8e678;
+    
+}
+.star {
+    font-size: 24px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.star:hover,
+.star.selected {
+    color: #ffc107; /* Yellow color */
+}
